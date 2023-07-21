@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: red;
+    padding: 2em;
+    margin: 0;
+}
+
+#items, #cart, #pastOrders {
+    border: 1px solid gold;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+input[type="number"] {
+    width: 50px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Market</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="items" aria-label="Items for sale"></section>
+        <section id="cart" aria-label="Shopping cart">
+            <h2>Cart</h2>
+            <p id="total"></p>
+            <label for="deliveryOption">Delivery Option:</label>
+            <select id="deliveryOption">
+                <option selected disabled>Choose option</option>
+                <option value="pickup">Pick Up</option>
+                <option value="delivery">Delivery</option>
+            </select>
+            <input type="text" id="address" placeholder="Enter delivery address" style="display: none;" aria-label="Delivery address" />
+            <button id="order" disabled>Complete Order</button>
+        </section>
+        <section id="pastOrders" aria-label="Past orders">
+            <h2>Past Orders</h2>
+            <ul id="ordersList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
