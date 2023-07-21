@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <button id="reset" aria-label="Reset the app">Reset</button>
     <main>
         <section id="items" aria-label="Items for sale"></section>
         <section id="cart" aria-label="Shopping cart">
@@ -14,7 +15,7 @@
             <p id="total"></p>
             <label for="deliveryOption">Delivery Option:</label>
             <select id="deliveryOption">
-                <option selected disabled>Choose option</option>
+                <option value="" selected disabled hidden>Select Option</option>
                 <option value="pickup">Pick Up</option>
                 <option value="delivery">Delivery</option>
             </select>

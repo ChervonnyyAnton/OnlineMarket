@@ -2,16 +2,30 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    color: white;
-    background: red;
+    background: #f2f2f2;
     padding: 2em;
     margin: 0;
 }
 
+#reset {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
 #items, #cart, #pastOrders {
-    border: 1px solid gold;
+    border: 1px solid #5E0F40;
     padding: 20px;
     margin-bottom: 2em;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
 }
 
 .item {
@@ -27,4 +41,5 @@ button:disabled {
 
 input[type="number"] {
     width: 50px;
+    border-radius: 10px;
 }
